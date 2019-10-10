@@ -12,19 +12,27 @@
     </head>
     <body>
         <header>
-            <h1><?php echo $headTitle;?></h1>
+            <h1 class="title"><?php echo $headTitle;?></h1>
             <p class="large-text"><?php echo $subTitle; ?></p>
         </header>
-        <form method="POST">
+        <form class="contact-form" action="submitted-form.php" method="POST">
             <h2>Contact Us</h2>
-            <label for="inputName">Name</label>
-            <input type="text" name="name" id="inputName" placeholder="Your Name" />
-            <label for="inputEmail">Email</label>
-            <input type="email" name="email" id="inputEmail" placeholder="Your Email" />
-            <label for="inputSubject">Subject</label>
-            <input type="text" name="subject" id="inputSubject" placeholder="Subject of your email" />
-            <label for="inputMessage">Message</label>
-            <textarea id="inputMessage" rows="5"></textarea>
-            <button type="submit">Submit</button>
+            <div>
+                <label class="label" for="inputName">Name</label>
+                <input type="text" name="name" id="inputName" placeholder="Your Name" />
+            </div>
+            <div>
+                <label class="label" for="inputEmail">Email</label>
+                <input type="email" name="email" id="inputEmail" placeholder="Your Email" />
+            </div>
+            <div>
+                <label class="label" for="inputSubject">Subject</label>
+                <input type="text" name="subject" id="inputSubject" placeholder="Subject of your email" />
+            </div>
+            <div>
+                <label class="label" for="inputMessage">Message</label>
+                <textarea name="message" id="inputMessage" rows="5"></textarea>
+            </div>
+            <button class="btn" type="submit" name="submit">Submit</button>
         </form>
 </html>
